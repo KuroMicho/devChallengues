@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-gray-light: #fafafa;
+  --color-black: #000000;
+  --color-gray-dark: #a9a9a9;
+  --color-blue-light: rgba(46, 159, 204);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: var(--color-gray-light);
+  color: var(--color-black);
+  height: 1489px;
+  width: 1440px;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(5, 20vw);
+  grid-template-rows: 110px repeat(3, 400px) 1fr;
+  height: 100vh;
+  row-gap: 50px;
+  position: relative;
+}
+
+.flag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  height: 50%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 50%,
+    rgb(46, 159, 204) 50%
+  );
+  clip-path: polygon(80% 0, 100% 0, 100% 20%);
+}
+
+.heading-1 {
+  font-size: 3.2rem;
+  font-family: "PT Serif";
+  font-weight: 700;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.info {
+  font-size: 1.8rem;
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+  margin-left: 200px;
+  text-align: left;
+}
+
+.info__title {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.crew {
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
+  justify-self: center;
+  align-self: center;
+  justify-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(2, 380px);
+  row-gap: 60px;
+  column-gap: 50px;
+}
+
+.member {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content min-content;
+}
+
+.member--2 {
+  margin-top: 100px;
+}
+.member--5 {
+  margin-top: 100px;
+}
+
+.member__img {
+  grid-column: 1 / 2;
+  width: 200px;
+  display: block;
+  object-fit: cover;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.member__img:hover {
+  box-shadow: 0 0 0 10px var(--color-blue-light);
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+}
+
+.member__position {
+  grid-column: 2 / 3;
+  margin-left: 10px;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+}
+
+.member__name {
+  grid-row: 2 / 3;
+  padding-top: 15px;
+}
+
+.footer {
+  text-align: center;
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+  align-self: flex-end;
+  color: var(--color-gray-dark);
+  font-family: "Montserrat";
+}
+
+.footer__link:link,
+.footer__link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 1260px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .info {
+    margin-left: 140px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .member__img {
+    width: 150px;
+  }
+
+  .info {
+    margin-left: 80px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 46vw);
+    row-gap: 10px;
+    padding: 24px;
+  }
+
+  .heading-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 50px;
+  }
+
+  .info {
+    grid-column: 1 / 3;
+    grid-row: 2 /3;
+    margin: 0;
+    width: 65%;
+  }
+
+  .crew {
+    margin-top: 70px;
+    grid-column: 1 / 3;
+    grid-template-columns: repeat(2, 50vw);
+    justify-items: center;
+    align-items: flex-end;
+    row-gap: 0;
+    column-gap: 0;
+  }
+
+  .member--1 {
+    align-self: center;
+  }
+
+  .member--3 {
+    align-self: flex-start;
+  }
+
+  .member--4 {
+    align-self: center;
+  }
+
+  .member--5 {
+    align-self: flex-start;
+    margin-top: -70px;
+  }
+
+  .footer {
+    grid-row: 6 / 7;
+    margin-bottom: -30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-1 {
+    grid-column: 1 / -1;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  .info {
+    width: 85%;
+  }
+
+  .member__img {
+    width: 120px;
+  }
+}

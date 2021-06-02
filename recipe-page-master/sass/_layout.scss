@@ -1,0 +1,79 @@
+.recipe {
+  display: grid;
+  padding: 5.2rem 2rem;
+  grid-template-columns:
+    [full-start] minmax(20rem, 1fr) [center-start] repeat(
+      4,
+      [col-start] minmax(min-content, 24rem) [col-end]
+    )
+    [center-end]
+    minmax(20rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns:
+      [full-start] minmax(5rem, 1fr) [center-start] repeat(
+        4,
+        [col-start] minmax(min-content, 24rem) [col-end]
+      )
+      [center-end]
+      minmax(5rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns:
+      [center-start] repeat(4, [col-start] minmax(min-content, 24rem) [col-end])
+      [center-end];
+  }
+}
+
+.heading-2 {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: $color-gray-1;
+  margin-bottom: 3.2rem;
+}
+
+.heading-3 {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: $color-gray-1;
+  margin-bottom: 3rem;
+}
+
+// utility
+.bold {
+  font-weight: 500;
+}
+
+.lazy-img {
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+}
+//
+
+.recipe-source {
+  color: $color-gray-3;
+  grid-column: center-start / center-end;
+  font-style: italic;
+}
+
+.footer {
+  text-align: center;
+  color: $color-gray-footer;
+  font-weight: 500;
+  margin-bottom: 3rem;
+
+  span {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}
+
+.footer__link:link,
+.footer__link:visited {
+  text-decoration: none;
+  color: inherit;
+}

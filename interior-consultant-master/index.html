@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/img/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script defer src="/script.js"></script>
+
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo-box">
+          <figure class="logo">this interior</figure>
+        </div>
+        <input
+          class="check hidden"
+          type="checkbox"
+          name="check-menu"
+          id="check-menu"
+        />
+        <label class="check__label" for="check-menu"
+          ><span class="check__button"></span
+        ></label>
+        <div class="background">&nbsp;</div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Collection</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="content">
+          <h1 class="heading-1">Modern interior</h1>
+          <p class="content__info">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <button class="btn">Read more<span>&RightArrow;</span></button>
+        </div>
+        <div class="view">
+          <figure class="view-image">
+            <img
+              srcset="img/photo1-min.png 300w, img/photo1.png 1000w"
+              sizes="(max-width: 900px) 30vw, (max-width: 600px) 40vw, 300px"
+              alt="photo design"
+              class="view__img lazy-img"
+            />
+          </figure>
+          <div class="view-worker">
+            <div class="worker">
+              <img
+                src="/img/photo2.png"
+                alt="photo worker"
+                class="worker__img"
+              />
+              <div class="worker__profile">
+                <h3 class="worker__name">Aliza Webber</h3>
+                <p class="worker__charge">Interior designer</p>
+              </div>
+              <h2 class="worker__desc">Designed in 2020 by Aliza Webber</h2>
+            </div>
+          </div>
+        </div>
+      </header>
+      <footer class="footer">
+        <p class="footer__message">
+          created by <span>KiritoDev</span> &ndash;
+          <a class="footer__link" href="https://devchallenges.io/"
+            >devchallenges.io</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

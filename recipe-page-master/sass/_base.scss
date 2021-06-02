@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+$color-primary: #f2994a;
+$color-gray-1: #333333;
+$color-gray-2: #4f4f4f;
+$color-gray-3: #bdbdbd;
+$color-gray-footer: #828282;
+$color-black: #000000;
+$color-white: #ffffff;
+
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Playfair Display", sans-serif;
+
+$bp-largest: 78.75em;
+$bp-large: 70.375em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  background-color: $color-white;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
