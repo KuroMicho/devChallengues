@@ -28,9 +28,7 @@
 
 ## Overview
 
-<div align="center">
-  <img src="https://ibb.co/qd9YHPg">
-</div>
+![screenshot](https://ibb.co/qd9YHPg)
 
 ## Features
 
