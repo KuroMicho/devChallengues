@@ -13,8 +13,6 @@ $color-gray-light: #f2f2f2;
 $color-gray-dark-1: #a9a9a9;
 $color-gray-dark-2: #828282;
 
-$color-selection: #3cb;
-
 $font-primary: "Montserrat", sans-serif;
 $font-display: "Lora", sans-serif;
 $font-logo: "Crimson Pro", sans-serif;
@@ -49,9 +47,10 @@ body {
   font-weight: 400;
   color: $color-white;
   background-color: $color-black;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 ::selection {
-  background-color: $color-selection;
+  background-color: $color-gray-light;
+  color: $color-black;
 }
