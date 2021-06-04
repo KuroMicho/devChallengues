@@ -31,6 +31,7 @@ body {
 .wrapper {
   padding: 4rem;
   height: 100vh;
+  display: grid;
 }
 
 .heading-error {
@@ -42,6 +43,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-content: baseline;
 }
 
 .animation {
@@ -169,7 +171,7 @@ body {
   }
 
   .animation__figure {
-    width: 360px;
+    width: 500px;
   }
 
   .btn:link,
@@ -200,7 +202,7 @@ body {
   }
 
   .animation__figure {
-    width: 300px;
+    width: 80vw;
   }
 
   .status__message {
