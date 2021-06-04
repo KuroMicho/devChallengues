@@ -14,7 +14,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-challenge}">
+    <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
       Challenge
     </a>
   </h3>
@@ -27,11 +27,15 @@
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
+## Overview
+
+![screenshot](https://i.ibb.co/Gvn5gt7/recipe.png)
+
 ## Features
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application to complete the following user stories:
 
-- X User story: This is a completed user stories
+- [x] User story: This is a completed user stories
 
 ## How To Use
 
@@ -53,3 +57,7 @@ $ npm start
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 
+## Contact
+
+- GitHub [@kuromicho](https://github.com/kuromicho)
+- Twitter [@kiritodev](https://twitter.com/kiritodev)
