@@ -126,6 +126,7 @@ body {
   color: var(--color-gray-light-1);
   text-align: center;
   margin-bottom: 3rem;
+  margin-top:10rem;
 }
 
 .footer__link:link,
