@@ -26,6 +26,10 @@
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
+## Overview
+
+![screenshot](https://i.ibb.co/3CjrRn7/interior.png);
+
 ## Features
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories.
