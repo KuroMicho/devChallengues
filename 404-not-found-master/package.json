@@ -1,0 +1,15 @@
+{
+  "name": "404-not-found-master",
+  "version": "1.0.0",
+  "description": "page 404 challengue",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "KuroMicho",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
