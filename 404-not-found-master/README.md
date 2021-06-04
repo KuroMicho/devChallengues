@@ -28,7 +28,7 @@
 
 ## Overview
 
-![screenshot](https://ibb.co/qd9YHPg)
+![screenshot](https://i.ibb.co/56vhQfj/404.png)
 
 ## Features
 
