@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Checkout Page | KuroMicho</h1>
+<h1 align="center">KuroMicho | Checkout Page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://">
+    <a href="https://devchallenges.io/solutions/INT8tthE5oZMflJWB9gX">
       Solution
     </a>
     <span> | </span>
@@ -49,7 +49,7 @@ $ npm start
 
 ## Acknowledgements
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
+- [Steps to replicate a design with only HTML and CSS(SASS) JS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
