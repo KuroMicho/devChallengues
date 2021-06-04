@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="/img/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/script.js"></script>
+
+    <title>Devchallenges | KuroMicho</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 class="heading-2">Checkout</h2>
+      <div class="form-container">
+        <form class="form">
+          <h3 class="heading-3">Contact information</h3>
+          <div class="form__group">
+            <img class="icon" src="/img/SVG/email.svg"></img>
+            <label for="email" class="form__label">E-mail</label>
+            <input
+              type="email"
+              name="form-email"
+              id="email"
+              class="form__input"
+              placeholder="Enter your email..."
+              required
+            />
+          </div>
+          <div class="form__group">
+            <img class="icon" src="/img/SVG/call.svg"></img>
+            <label for="phone" class="form__label">Phone</label>
+            <input
+              type="tel"
+              name="form-phone"
+              id="phone"
+              class="form__input"
+              placeholder="Enter your phone..."
+              required
+            />
+          </div>
+          <h3 class="heading-3">Shipping address</h3>
+          <div class="form__group">
+            <img class="icon" src="/img/SVG/user-circle.svg"></img>
+            <label for="name" class="form__label">Full name</label>
+            <input
+              type="text"
+              name="form-name"
+              id="name"
+              class="form__input form__input--name"
+              placeholder="Rodney Cotton"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <img class="icon" src="/img/SVG/home.svg"></img>
+            <label for="address" class="form__label">Address</label>
+            <input
+              type="text"
+              name="form-address"
+              id="address"
+              class="form__input"
+              placeholder="Your address..."
+              required
+            />
+          </div>
+          <div class="form__group">
+            <img class="icon" src="/img/SVG/location_city.svg"></img>
+            <label for="city" class="form__label">City</label>
+            <input
+              type="text"
+              name="form-city"
+              id="city"
+              class="form__input"
+              placeholder="Your city..."
+              required
+            />
+          </div>
+          <div class="form--country">
+            <img class="icon" src="/img/SVG/world.svg"></img>
+            <label for="country" class="form__label form__label--country"
+              >Country</label
+            >
+            <div class="dropdown">
+              <input type="text"  id="country" class="form__input form__input--select" placeholder="Your country..." required>
+              <div class="dropdown-content">
+                <a class="option" href="#">Colombia</a>
+                <a class="option" href="#">Peru</a>
+                <a class="option" href="#">Argentina</a>
+              </div>
+            </div>
+          </div>
+          <div class="form--postal">
+            <img class="icon" src="/img/SVG/markunread_mailbox.svg"></img>
+            <label for="postal-code" class="form__label form__label--postal"
+              >Postal code</label
+            >
+            <input
+              type="text"
+              name="form-postal"
+              id="postal-code"
+              class="form__input"
+              placeholder="Your postal code..."
+              required
+            />
+          </div>
+          <div class="form__checkbox">
+            <input
+              type="checkbox"
+              name="form-save"
+              id="save-info"
+              class="form__checkbox--input"
+            />
+            <label for="save-info" class="form__label form__checkbox--label"
+              >Save this information for next time</label
+            >
+          </div>
+          <div class="form__btn--right">
+            <button type="submit" class="form__btn">Continue</button>
+          </div>
+        </form>
+      </div>
+      <div class="checkout-container">
+        <div class="checkout">
+          <img src="/img/photo1.png" alt="" class="checkout__img" />
+          <div class="checkout__info">
+            <span class="checkout__item">Vittage Backbag</span>
+            <div class="checkout__payment">
+              <span class="checkout__cost">$54.99</span>
+              <span class="checkout__discount">$94.99</span>
+            </div>
+            <figure class="checkout__quantity">
+              <span class="checkout__btn">
+                <img src="/img/SVG/minus.svg" alt="">
+              </span>
+              <span class="checkout__number">1</span>
+              <span class="checkout__btn">
+                <img src="/img/SVG/add.svg" alt="">
+              </span>
+            </figure>
+          </div>
+        </div>
+        <div class="checkout">
+          <img src="/img/photo2.png" alt="" class="checkout__img" />
+          <div class="checkout__info">
+            <span class="checkout__item">Levi Shoes</span>
+            <div class="checkout__payment">
+              <span class="checkout__cost">$74.99</span>
+              <span class="checkout__discount">$124.99</span>
+            </div>
+            <figure class="checkout__quantity">
+              <span class="checkout__btn">
+                <img src="/img/SVG/minus.svg" alt="">
+              </span>
+              <span class="checkout__number">1</span>
+              <span class="checkout__btn">
+                <img src="/img/SVG/add.svg" alt="">
+              </span>
+            </figure>
+          </div>
+        </div>
+        <div class="details">
+          <span class="details__text">Shipping</span>
+          <span class="details__price">$19</span>
+        </div>
+        <div class="details">
+          <span class="details__text">Shipping</span>
+          <span class="details__price">$148.98</span>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__message">
+        created by <span>KuroMicho</span> &ndash;
+        <a class="footer__link" target="_blank" href="https://devchallenges.io/"
+          >devchallenges.io</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

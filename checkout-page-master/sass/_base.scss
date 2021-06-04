@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+$color-gray-primary: #333333;
+$color-gray-secondary: #828282;
+$color-gray-label: #4f4f4f;
+$color-gray-title: #4e5150;
+$color-gray-small-btn: #e0e0e0;
+$color-gray-checkout: #f2f2f2;
+$color-white: #ffffff;
+$color-orange: #f2994a;
+$color-green: #29e483;
+
+$bp-large: 1200px;
+$bp-medium: 900px;
+$bp-small: 600px;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  background-color: $color-white;
+  color: $color-gray-primary;
+  font-size: 1.6rem;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+}
